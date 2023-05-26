@@ -2,5 +2,70 @@
     padding:0;
     margin:0;
     box-sizing: border-box;
+    text-decoration: none;
     
+}
+header{
+   
+    background-color: black;
+}
+.container{
+    width: 80%;
+    height: 70px;
+    margin: 0 auto;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.sr-only{
+    border:0 ;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    margin:-1px;
+    clip: rect(0,0,0,0);
+    position: absolute;
+    overflow: hidden;
+}
+.logo{
+    color:white;
+}
+.navbar{
+    display: none;
+}
+
+.mobile-menu{
+    color:white;
+}
+
+.hero{
+    background:url(./img/Hero_bg.jpg);
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    back
+}
+@media screen and (min-width:768px){
+     .mobile-menu{
+        display: none;
+     }
+     .navbar{
+        display: block;
+        
+     }
+     .navbar ul{
+        display: flex;
+        list-style-type: none;
+     }
+      .navbar li:not(:last-child){
+        margin-right: 35px;
+      }
+     .navbar li a{
+        color:white;
+        font-size: 18px;
+        font-weight: 500;
+        
+     }
+     
 }
