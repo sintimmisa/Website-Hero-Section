@@ -5,9 +5,16 @@
     text-decoration: none;
     
 }
+
+:root{
+    --var-primary-color:rgb(5, 142, 133);
+}
 header{
    
     background-color: black;
+}
+span{
+    color:var(--var-primary-color);
 }
 .container{
     width: 80%;
@@ -39,12 +46,59 @@ header{
 }
 
 .hero{
+    width: 100%;
     background:url(./img/Hero_bg.jpg);
-    height: 400px;
+    height: 500px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    back
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.hero-content{
+    background-color:rgba(255, 255, 255, 0.567);
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 50px 10px;
+  
+    
+   
+}
+.hero-content h1{
+    font-size:4rem;
+    font-weight: 500;
+    font-family:Arial, Helvetica, sans-serif;
+    
+  
+}
+.hero-content p{
+    font-size: 2rem;
+    color:var(--var-primary-color);
+}
+button{
+    margin-top:30px;
+    border:none;
+    outline: none;
+    background: rgb(9, 9, 9);
+    padding: 15px 30px;
+    color: white;
+    
+    font-size: 18px;
+
+}
+.btn{
+   
+    text-decoration: none;
+}
+button:hover{
+    background: rgb(5, 142, 133);
+    cursor: pointer ;
 }
 @media screen and (min-width:768px){
      .mobile-menu{
@@ -66,6 +120,18 @@ header{
         font-size: 18px;
         font-weight: 500;
         
+     }
+     a:hover{
+        color:var(--var-primary-color) !important;
+     }
+     .active{
+        color:var(--var-primary-color) !important;
+     }
+    .hero{
+        height: 90vh;;
+    }
+     .hero-content{
+        width: 50%;
      }
      
 }
